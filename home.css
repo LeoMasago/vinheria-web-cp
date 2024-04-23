@@ -4,7 +4,7 @@
 .img1{
     width: 200px;
 }
-.btn1{
+.btn{
     padding: 10px;
     display: flex;
 }
@@ -14,4 +14,11 @@
 }
 .qtdVinho{
     padding: 20px;
+}
+.txtDesconto{
+    padding: 10px;
+    margin-left: 10px;
+}
+.desconto{
+    display: flex;
 }
