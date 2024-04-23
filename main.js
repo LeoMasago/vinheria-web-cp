@@ -2,14 +2,20 @@ function idade(){
     var idade = parseFloat(document.getElementById("idade").value);
 
     if(idade < 18){
-        alert("Não pode!")
+        alert("Não pode!");
     }
     else{
         // direcionando para a página home
-        window.location.href = "home.html"
+        window.location.href = "home.html";
     }
 }
 
 function compra(){
-    alert("Adicionado ao carrinho")
+    var vinho1 = parseInt(document.getElementById("qtdVinho1").value);
+    var vinho = 11;
+    if(vinho1 > 0){
+        valor = vinho1 * vinho;
+        alert(valor);
+    }
+    
 }
