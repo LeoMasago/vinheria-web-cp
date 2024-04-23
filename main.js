@@ -9,3 +9,7 @@ function idade(){
         window.location.href = "home.html"
     }
 }
+
+function compra(){
+    alert("Adicionado ao carrinho")
+}
