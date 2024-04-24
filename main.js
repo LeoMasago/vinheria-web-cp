@@ -2,7 +2,7 @@ function idade(){
     var idade = parseFloat(document.getElementById("idade").value);
 
     if(idade < 18){
-        alert("Não pode!");
+        alert("Acesso negado!");
     }
     else{
         // direcionando para a página home
