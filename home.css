@@ -6,22 +6,29 @@ a {
     color: aliceblue;
     margin: 1% 5% 1% 0;
 }
-.lista-vinhos{
-    background-color: aqua;
-}
 .img1{
     width: 200px;
 }
 .btn{
     padding: 10px;
     display: flex;
+    border-radius: 10px;
+    border: none;
 }
 .txt{
     margin-top: 1000px;
     background-color: blue;
 }
+.lista-vinhos{
+    display: flex;
+    margin-left: 15%;
+}
+.bloco1{
+    background-color: antiquewhite;
+    
+}
 .qtdVinho{
-    padding: 20px;
+    padding: 18px;
 }
 .txtDesconto{
     padding: 10px;
@@ -108,4 +115,7 @@ a {
 }
 .a-logo {
     margin: 0;
+}
+body{
+    background-color: rgb(225, 185, 137);
 }
