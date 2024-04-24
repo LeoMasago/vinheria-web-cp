@@ -7,9 +7,11 @@
     <title>HOME</title>
 </head>
 <header class="header-site">
-    <h1 class="logo">
-        Vinheria Agnelo
-    </h1>
+    <a class="a-logo" href="home.html">  
+        <h1 class="logo">
+            Vinheria Agnelo
+        </h1>
+    </a>
     <div class="nav-area">
         <div class="pesquisa">
             <img src="lupa.jpg" alt="" class="lupa">
@@ -23,10 +25,10 @@
             
         </nav>
     </div>
-    <p id="username"></p>
-    <a href="login.html">
-    <div class="user"></div>
-    </a>
+    <div id="user-area">
+    <p id="user-conected" onclick="login()">login</p>
+    <div class="user" onclick="login()"></div>
+    </div>
 
 
 
@@ -60,5 +62,6 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -58,7 +58,7 @@ a {
 
 }
 .nav-area {
-    width: 70%;
+    width: 55%;
     padding-top: 3em;
 }
 
@@ -92,3 +92,20 @@ a {
     display: flex;
     
 }  
+#user-area {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+
+}
+#user-conected {
+    color: aliceblue;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a-logo {
+    margin: 0;
+}
