@@ -44,3 +44,10 @@ Este projeto tivemos como objetivo a criação de uma pagina em HTML, CSS e Java
     <img height="180em" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
     <img height="180em" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
 </div>
+
+<h1>
+  :dark_sunglasses: Integrantes:
+</h1>
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/161898042?v=4" width=115><br><sub>Eduardo Tomazela</sub>](https://github.com/du-ntomazela) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/101646035?v=4" width=115><br><sub>Léo Massago</sub>](https://github.com/LeoMasago) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/162758896?v=4" width=115><br><sub>Luiz Henrique</sub>](https://github.com/LhenriqueTech) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/63599156?v=4" width=115><br><sub>Hebert Souza</sub>](https://github.com/herbertdesousa)
+| :---: | :---: | :---: | :---: |
