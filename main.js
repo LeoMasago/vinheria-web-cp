@@ -22,21 +22,31 @@ function carrinho(){
     var v3 = vinho3 * vinhoSeco;
     if(vinho1 > 0 || vinho2 > 0 || vinho3 > 0){
         valor = v1 + v2 + v3;
-        alert(valor);
+        alert("Itens adicionados com sucesso!");
     } 
 }
 
 function desconto(){
     var desconto = document.getElementById("txtDesconto").value;
-    if(desconto === "FIAP2024"){
+    if(desconto == "FIAP2024"){
         porcentagem = 10;
         valor = valor * 0.9;
+        console.log(valor); 
+        alert(`Você conseguiu um desconto de ${porcentagem}%`);   
     }else{
-        alert("Cupom inválido")
+        alert("Cupom inválido");
     }
-    alert(`Você conseguiu um desconto de ${porcentagem}%`);
+    
+    
+    
 }
 
 function finalizar(){
   alert(`O valor final da sua conta foi de R$ ${valor}`);
+  window.location.replace(href="pagamento.html");
+}
+
+function finalizar2(){
+    alert(`Seus dados foram salvos com sucesso! Obrigado pela preferência na compra.`)
+    window.location.replace(href="home.html");
 }

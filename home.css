@@ -186,7 +186,19 @@ body{
     }
     
 }
-
+#fundo-vinho {
+    background-color: rgb(255, 255, 255);
+}
 #user-conected {
     font-size: 20px;
+}
+#comprar {
+    margin:20px auto 50px auto;
+}
+.desconto {
+    margin: 10px ;
+}
+.txtDesconto {
+    height: 30px;
+    border-radius: 5px;
 }

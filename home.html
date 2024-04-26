@@ -37,7 +37,7 @@
             <div class="bloco1">
                 <img class="img1" src="https://images.tcdn.com.br/img/img_prod/712153/vinho_tinto_fino_seco_cabernet_sauvignon_750ml_halberth_82_1_20190702214324.png" alt="">
                 <div class="conteudo-vinho">
-                    <h2 id="vinho1" class="titulo-vinhos">Vinho tinto Cabernet Sauvignon</h2>
+                    <h2 id="vinho1" class="titulo-vinhos">Vinho tinto Cabernet Sauvignon R$ 50,00</h2>
                     <p class="descricao-vinho">O Vinho tinto Cabernet Sauvignon, Safra 2018, é encorpado e apresenta sabores intensos de frutas escuras, como amora e cereja, complementados por notas de especiarias e carvalho. Seus taninos são firmes, proporcionando uma estrutura robusta e um final persistente.</p>
                     <div class="interactions"> 
                         <input type="number" class="qtdVinho" id="qtdVinho1" value="0">
@@ -62,7 +62,7 @@
             <div class="bloco1">
                 <img class="img1" src="https://img.panoramasistemas.com.br/viadelvino.img/produto/378/vinho-branco-chardonnay-vaccaro-750-ml-701-cape.webp" alt="">
                 <div class="conteudo-vinho">
-                    <h2 id="vinho2" class="titulo-vinhos">Vinho branco Chardonnay</h2>
+                    <h2 id="vinho2" class="titulo-vinhos">Vinho branco Chardonnay R$ 35,00</h2>
                     <p class="descricao-vinho">O Vinho branco Chardonnay, Safra 2020, é elegante e refrescante, com aromas de frutas tropicais, como abacaxi e pêssego, combinados com notas de baunilha e toques sutis de carvalho. Sua acidez equilibrada e corpo médio tornam-no versátil e fácil de beber.</p>
                     <div class="interactions"> 
                         <input type="number" class="qtdVinho" id="qtdVinho2" value="0">
@@ -85,9 +85,9 @@
                 </div>
             </div>
             <div class="bloco1">
-                <img class="img1" src="https://cdn.dooca.store/197/products/vinho-san-diego-tinto-suave-750-ml_450x600+fill_ffffff.jpg?v=1643740603&webp=0" alt="">
+                <img class="img1" id="fundo-vinho" src="https://lapastina.vteximg.com.br/arquivos/ids/158726-1000-1500/025422.png?v=637874433328530000" alt="">
                 <div class="conteudo-vinho">
-                    <h2 id="vinho3" class="titulo-vinhos">Vinho rosé Pinot Noir</h2>
+                    <h2 id="vinho3" class="titulo-vinhos">Vinho rosé Pinot Noir R$ 40,00</h2>
                     <p class="descricao-vinho">O Vinho rosé Pinot Noir, Safra 2019, é delicado e refrescante, apresentando uma cor rosa pálida e aromas sutis de frutas vermelhas, como morango e framboesa, com toques florais e cítricos. Seu paladar é leve, com uma acidez vibrante e um final suave.</p>
                     <div class="interactions">
                         <input type="number" class="qtdVinho" id="qtdVinho3" value="0">
@@ -114,12 +114,13 @@
 
     
 
-    <div class="desconto">
-        <button class="btn" id="desconto" onclick="desconto()">Desconto</button>
-        <input type="text" class="txtDesconto" id="txtDesconto" value="">
-    </div>
-
+    
+    
     <div class="final">
+        <div class="desconto">
+            <button class="btn" id="desconto" onclick="desconto()">Desconto</button>
+            <input type="text" class="txtDesconto" id="txtDesconto" value="">
+        </div> 
         <button class="btn" id="comprar" onclick="finalizar()">Finalizar Compra</button>
     </div>
 
