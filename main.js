@@ -14,12 +14,12 @@ function carrinho(){
     var vinho1 = parseFloat(document.getElementById("qtdVinho1").value);
     var vinho2 = parseFloat(document.getElementById("qtdVinho2").value);
     var vinho3 = parseFloat(document.getElementById("qtdVinho3").value);
-    var vinhoTinto = 10;
-    var vinhoBranco = 21;
-    var vinhoSeco = 51;
+    var vinhoTinto = 50;
+    var vinhoBranco = 35;
+    var vinhoRose = 40;
     var v1 = vinho1 * vinhoTinto;
     var v2 = vinho2 * vinhoBranco;
-    var v3 = vinho3 * vinhoSeco;
+    var v3 = vinho3 * vinhoRose;
     if(vinho1 > 0 || vinho2 > 0 || vinho3 > 0){
         valor = v1 + v2 + v3;
         alert("Itens adicionados com sucesso!");
