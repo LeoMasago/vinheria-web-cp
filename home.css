@@ -1,204 +1,230 @@
 * {
-    margin: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 a {
-    text-decoration: none;
-    color: aliceblue;
-    margin: 1% 5% 1% 0;
-}
-.img1{
-    max-width: 200px;
-    margin: 20px;
-    max-height: 400px;
-}
-.btn{
-    padding: 10px;
-    display: flex;
-    border-radius: 10px;
-    border: none;
-    transition: all 1s ease;
-}
-.txt{
-    margin-top: 1000px;
-    background-color: blue;
-}
-.lista-vinhos{
-    display: flex;
-    flex-direction: column;
-    
-}
-.bloco1{
-    background-color: antiquewhite;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    
-}
-.qtdVinho{
-    padding: 18px;
-    height: 30px;
-    border-radius: 5px;
-}
-.btn:hover {
-    transform: scale(1.1, 1.1);
-    background-color: rgb(158, 233, 45);
-}
-.txtDesconto{
-    padding: 10px;
-    margin-left: 10px;
-}
-.desconto{
-    display: flex;
+  text-decoration: none;
+  color: aliceblue;
 }
 
-.header-site {
-    background-color: black;
-    width: 100%;
-    height: 10em;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
+button, input {
+  border: 0 !important;
+  outline: 0 !important;
 }
 
-@font-face {
-    font-family: Felicity;
-    src: url('FelicityBonhamDEMO!-DEMO!.otf');
-}
-.logo {
-    color: aliceblue;
-    font-size: 2em;
-    font-family: Felicity, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-right: 50px;
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    padding-top: 3em;
-
-}
-.nav-area {
-    width: 55%;
-    padding-top: 3em;
-}
-
-.lupa {
-    width: 2em;
-    height: auto;
-    
-}
-.pesquisa {
-    display: flex;
-    flex-direction: row;
-}
-.sarch-bar {
-    background-color: rgb(190, 190, 190);
-    width: 0;
-    border: solid 2px black;
-    border-radius: 5px;
-    transition: all 1s ease;
-}
-.pesquisa:hover {
-    .sarch-bar {
-        width: 600px;
-    }
-}
-.user {
-    border: solid black 2px;
-    border-radius: 50%;
-    background-color: aliceblue;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    
-}  
-#user-area {
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-
-
-}
-#user-conected {
-    color: aliceblue;
-    font-size: 2em;
-    padding-top: 10px;
-    padding-right: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.a-logo {
-    margin: 0;
-}
-body{
-    background-color: rgb(225, 185, 137);
-}
-
-.conteudo-vinho {
-    width: 500px;
-    padding-top: 20px;
-}
-
-.descricao-vinho {
-    margin: 20px;
-}
-.interactions {
-    display: flex;
-    flex-direction: row;
+.img1 {
+  max-width: 200px;
+  margin: 20px;
+  max-height: 400px;
 }
 
 .btn {
-    height: 40px;
-    background-color: greenyellow;
-    margin: 20px;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  transition: all 1s ease;
+}
+
+.txt {
+  margin-top: 1000px;
+  background-color: blue;
+}
+
+.lista-vinhos {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco1 {
+  background-color: antiquewhite;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.qtdVinho {
+  padding: 18px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+  background-color: rgb(158, 233, 45);
+}
+
+.txtDesconto {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.desconto {
+  display: flex;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 128px;
+  background-color: black;
+  padding: 20px;
+}
+
+@font-face {
+  font-family: Felicity;
+  src: url("FelicityBonhamDEMO!-DEMO!.otf");
+}
+
+.header-logo-img {
+  color: aliceblue;
+  font-size: 1.5em;
+  font-family: Felicity, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* header center */
+.header-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.header-center-search {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.header-center-search-bar {
+  /* background-color: rgb(190, 190, 190); */
+  width: 100%;
+  border: solid 2px black;
+  color: white;
+  background: transparent;
+  transition: all 1s ease;
+}
+
+.header-center-search:hover {
+  .header-center-search-bar {
+    /* width: 600px; */
+  }
+}
+
+.header-center-links {
+  display: flex;
+  align-self: center;
+  gap: 32px;
+  text-wrap: nowrap;
+  flex-direction: row;
+}
+
+.header-center-search img {
+  width: 2em;
+  height: auto;
+}
+
+.user {
+  border: solid black 2px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+#user-area {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+#user-conected {
+  color: aliceblue;
+  font-size: 2em;
+  padding-top: 10px;
+  padding-right: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(225, 185, 137);
+}
+
+.conteudo-vinho {
+  width: 500px;
+  padding-top: 20px;
+}
+
+.descricao-vinho {
+  margin: 20px;
+}
+.interactions {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  height: 40px;
+  background-color: greenyellow;
+  margin: 20px;
 }
 
 .painel-fundo {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 300px;
-    height: 40px;
-    background-color: aliceblue;
-    border: solid rgb(255, 255, 255) 1px;
-    border-radius: 5px;
-    transition: all 0.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  background-color: aliceblue;
+  border: solid rgb(255, 255, 255) 1px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in;
 }
 #triangulo-para-baixo {
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #949396;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #949396;
 }
 #recomendacoes-block {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
 .conteudo-recomendacoes {
-    opacity: 0;
-    transition: all 1s ease;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 .painel-fundo:hover {
-    height: 210px;
-    .conteudo-recomendacoes {
-        opacity: 1;
-    }
-    
+  height: 210px;
+  .conteudo-recomendacoes {
+    opacity: 1;
+  }
 }
+.painel-fundo::after {
+  content: "";
+  opacity: 0;
+  transition: all 0s ease-in;
+}
+
 #fundo-vinho {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 #user-conected {
-    font-size: 20px;
+  font-size: 20px;
 }
 #comprar {
-    margin:20px auto 50px auto;
+  margin: 20px auto 50px auto;
 }
 .desconto {
-    margin: 10px ;
+  margin: 10px;
 }
 .txtDesconto {
-    height: 30px;
-    border-radius: 5px;
+  height: 30px;
+  border-radius: 5px;
 }
