@@ -1,0 +1,4 @@
+# esse arquivo ignora arquivos para o git
+
+# ignora todos os arquivos e pasta .vscode
+.vscode/*
