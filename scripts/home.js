@@ -68,5 +68,5 @@ function pay() {
   
   alert(`Vamos para o pagamento, ficou apenas R$ ${totalAmount} :D`);
 
-  window.location.replace('login');
+  window.location.href = 'login.html';
 }

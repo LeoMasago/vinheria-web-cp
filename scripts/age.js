@@ -7,5 +7,5 @@ function checkAge() {
     alert(`${ageInput} anos de idade?? Tio Paulo`)
   }
 
-  window.location.replace("/home");
+  window.location.href = "home.html";
 }

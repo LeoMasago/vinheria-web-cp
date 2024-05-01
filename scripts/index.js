@@ -7,15 +7,15 @@ const userAgeStr = window.localStorage.getItem("@USER_AGE");
 
 /* quando está null significa que não existe esse dado */
 if (userAgeStr === null) {
-  window.location.replace("/age");
-}
-
-const userAge = parseInt(userAgeStr);
-
-if (userAge >= 18) {
-  if (userAge > 100) alert(`${userAge} anos?? terror do inss`);
-
-  window.location.replace("/home");
+  window.location.href = "age.html";
 } else {
-  window.location.replace("/kid");
+  const userAge = parseInt(userAgeStr);
+  
+  if (userAge >= 18) {
+    if (userAge > 100) alert(`${userAge} anos?? terror do inss`);
+  
+    window.location.href = "home.html";
+  } else {
+    window.location.href = "kid.html";
+  }
 }
