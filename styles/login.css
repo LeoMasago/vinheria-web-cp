@@ -1,4 +1,4 @@
-.conteiner {
+/* .conteiner {
     margin: auto;
     border: solid black 1px;
     width: 500px;
@@ -9,15 +9,30 @@
     flex-direction: column;
     padding: 10px;
 }
+
 .login {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .btns {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 50px;
     justify-content: space-between;
 
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
 }
 
-
+main #form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

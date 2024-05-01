@@ -38,6 +38,21 @@ li {
   transform: scale(1.1);
 }
 
+.btn2 {
+  padding: 8px;
+  background-color: cadetblue;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 500ms;
+  cursor: pointer;
+}
+.btn2:hover {
+  transform: scale(1.1);
+}
+
 .input {
   padding: 8px;
   border-radius: 4px;
