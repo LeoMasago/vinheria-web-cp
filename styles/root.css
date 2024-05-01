@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color: #222323;
+  color: #D3D1D0;
+}
+
+input, button {
+  outline: 0;
+  border: 0;
+}
+
+.btn {
+  padding: 8px;
+  background-color: #e1b989;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #222323;
+  /*
+    gerador de shadow facinho
+    https://www.cssmatic.com/box-shadow
+  */
+  box-shadow: inset -1px -2px 16px -6px rgba(0,0,0,0.75);
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  transition: all 500ms;
+}
+
+.input:focus {
+  border-color: #e1b989;
+}
