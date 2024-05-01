@@ -2,38 +2,6 @@ body {
   background-color: rgb(225, 185, 137);
 }
 
-.img1 {
-  max-width: 200px;
-  margin: 20px;
-  max-height: 400px;
-}
-
-.txt {
-  margin-top: 1000px;
-  background-color: blue;
-}
-
-.bloco1 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.qtdVinho {
-  padding: 18px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-.txtDesconto {
-  padding: 10px;
-  margin-left: 10px;
-}
-
-.desconto {
-  display: flex;
-}
-
 /*#region header */
 .header {
   position: sticky;
@@ -139,6 +107,10 @@ body {
 /*#endregion header */
 
 /*#region center  */
+main {
+  padding: 64px 0;
+}
+
 #vines {
   display: flex;
   flex-direction: column;
@@ -147,10 +119,14 @@ body {
   max-width: 1064px;
   border-radius: 8px;
   margin: 0 auto;
-  margin-top: 64px;
   background-color: antiquewhite;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   color: #232324;
+}
+
+#vines > .top {
+  display: flex;
+  justify-content: space-between;
 }
 
 #vines > ul {
@@ -169,6 +145,7 @@ body {
   aspect-ratio: 1;
   background-color: white;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 #vines > ul > li section {
@@ -187,19 +164,6 @@ body {
 #vines > ul > li section .top p {
   font-size: 14px;
   opacity: 0.8;
-}
-
-#vines > ul > li section .interactions {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-
-#vines > ul > li section .interactions input {
-  flex: 1;
-  padding: 8px 12px;
-  border-radius: 8px;
 }
 
 #vines > ul > li .recommended-plates {
@@ -240,49 +204,3 @@ body {
 }
 
 /*#endregion  */
-
-.conteudo-vinho {
-  width: 500px;
-  padding-top: 20px;
-}
-
-.descricao-vinho {
-  margin: 20px;
-}
-.interactions {
-  display: flex;
-  flex-direction: row;
-}
-
-/* .conteudo-recomendacoes {
-  opacity: 0;
-  transition: all 0.5s ease;
-} */
-.painel-fundo:hover {
-  height: 210px;
-  .conteudo-recomendacoes {
-    opacity: 1;
-  }
-}
-.painel-fundo::after {
-  content: "";
-  opacity: 0;
-  transition: all 0s ease-in;
-}
-
-#fundo-vinho {
-  background-color: rgb(255, 255, 255);
-}
-#user-conected {
-  font-size: 20px;
-}
-#comprar {
-  margin: 20px auto 50px auto;
-}
-.desconto {
-  margin: 10px;
-}
-.txtDesconto {
-  height: 30px;
-  border-radius: 5px;
-}

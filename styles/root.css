@@ -64,3 +64,7 @@ li {
   border-right: 5px solid transparent;
   border-top: 5px solid #949396;
 }
+
+.hide {
+  display: none; 
+}

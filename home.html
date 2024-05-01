@@ -51,7 +51,20 @@
 
     <main>
       <section id="vines">
-        <h2>Vinhos a sua disposição</h2>
+        <div class="top">
+          <h2>Vinhos a sua disposição</h2>
+          
+          <!-- a class hide está com display:none, quando o usuário -->
+          <!-- add algo no carrinho o js remove essa class -->
+          <button
+            id="pay-btn"
+            class="btn hide"
+            type="button"
+            onclick="pay()"
+          >
+            finalizar compra
+          </button>
+        </div>
   
         <ul>
           <li>
@@ -76,13 +89,9 @@
                 </p>
               </div>
   
-              <div class="interactions">
-                <input type="number" id="qtdVinho1" value="0" min="0" />
-  
-                <button class="btn" onclick="carrinho()">
-                  Adicionar ao Carrinho
-                </button>
-              </div>
+              <button class="btn" onclick="addToCart(VINE1_PRICE)">
+                Adicionar ao Carrinho
+              </button>
             </section>
   
             <div class="recommended-plates">
@@ -121,13 +130,9 @@
                 </p>
               </div>
   
-              <div class="interactions">
-                <input type="number" id="qtdVinho1" value="0" min="0" />
-  
-                <button class="btn" onclick="carrinho()">
-                  Adicionar ao Carrinho
-                </button>
-              </div>
+              <button class="btn" onclick="addToCart(VINE2_PRICE)">
+                Adicionar ao Carrinho
+              </button>
             </section>
   
             <div class="recommended-plates">
@@ -167,13 +172,9 @@
                 </p>
               </div>
   
-              <div class="interactions">
-                <input type="number" id="qtdVinho1" value="0" min="0" />
-  
-                <button class="btn" onclick="carrinho()">
-                  Adicionar ao Carrinho
-                </button>
-              </div>
+              <button class="btn" onclick="addToCart(VINE3_PRICE)">
+                Adicionar ao Carrinho
+              </button>
             </section>
   
             <div class="recommended-plates">
@@ -194,18 +195,6 @@
       </section>
     </main>
 
-    <div class="final">
-      <div class="desconto">
-        <button class="btn" id="desconto" onclick="desconto()">Desconto</button>
-        <input type="text" class="txtDesconto" id="txtDesconto" value="" />
-      </div>
-
-      <button class="btn" id="comprar" onclick="finalizar()">
-        Finalizar Compra
-      </button>
-    </div>
-
-    <script src="main.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/home.js"></script>
   </body>
 </html>
