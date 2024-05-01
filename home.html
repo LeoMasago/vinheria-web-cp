@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <title>HOME</title>
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <!-- usando font do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vinhos</title>
   </head>
 
   <body>
@@ -12,6 +22,7 @@
       <a class="header-logo" href="home.html">
         <h1 class="header-logo-img">Vinheria Agnelo</h1>
       </a>
+
       <div class="header-center">
         <div class="header-center-search">
           <img src="lupa.jpg" alt="lupa de pesquisa" />
@@ -22,18 +33,22 @@
             placeholder="Pesquisar por produto"
           />
         </div>
-        
+
         <nav class="header-center-links">
           <a href="#vinho1">Vinho tinto Cabernet Sauvignon</a>
           <a href="#vinho2">Vinho branco Chardonnay</a>
           <a href="#vinho3">Vinho rosé Pinot Noir</a>
         </nav>
       </div>
-      <div id="user-area">
-        <p id="user-conected" onclick="login()">login</p>
-        <div class="user" onclick="login()"></div>
-      </div>
+
+      <a href="/login.html">
+        <div class="header-user">
+          <span>entrar</span>
+          <div class="header-user-img"></div>
+        </div>
+      </a>
     </nav>
+
     <div class="lista-vinhos">
       <div class="bloco1">
         <img
