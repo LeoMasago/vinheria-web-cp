@@ -49,138 +49,157 @@
       </a>
     </nav>
 
-    <div class="lista-vinhos">
-      <div class="bloco1">
-        <img
-          class="img1"
-          src="https://images.tcdn.com.br/img/img_prod/712153/vinho_tinto_fino_seco_cabernet_sauvignon_750ml_halberth_82_1_20190702214324.png"
-          alt=""
-        />
-        <div class="conteudo-vinho">
-          <h2 id="vinho1" class="titulo-vinhos">
-            Vinho tinto Cabernet Sauvignon R$ 50,00
-          </h2>
-          <p class="descricao-vinho">
-            O Vinho tinto Cabernet Sauvignon, Safra 2018, é encorpado e
-            apresenta sabores intensos de frutas escuras, como amora e cereja,
-            complementados por notas de especiarias e carvalho. Seus taninos são
-            firmes, proporcionando uma estrutura robusta e um final persistente.
-          </p>
-          <div class="interactions">
-            <input type="number" class="qtdVinho" id="qtdVinho1" value="0" />
-            <button class="btn" id="btnVinho1" onclick="carrinho()">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-        <div class="bloco-de-recomendacoes">
-          <div class="painel-fundo">
-            <div id="recomendacoes-block">
-              <h2 class="titulo-recomendacao">Pratos recomendados</h2>
-              <div id="triangulo-para-baixo"></div>
+    <main>
+      <section id="vines">
+        <h2>Vinhos a sua disposição</h2>
+  
+        <ul>
+          <li>
+            <img
+              class="product-img"
+              src="https://images.tcdn.com.br/img/img_prod/712153/vinho_tinto_fino_seco_cabernet_sauvignon_750ml_halberth_82_1_20190702214324.png"
+              alt="Vinho Tinto Cabernet Sauvignon"
+            />
+  
+            <section>
+              <div class="top">
+                <h3>
+                  Vinho Tinto Cabernet Sauvignon - R$ 50,00
+                </h3>
+    
+                <p>
+                  O Vinho tinto Cabernet Sauvignon, Safra 2018, é encorpado e
+                  apresenta sabores intensos de frutas escuras, como amora e cereja,
+                  complementados por notas de especiarias e carvalho. Seus taninos
+                  são firmes, proporcionando uma estrutura robusta e um final
+                  persistente.
+                </p>
+              </div>
+  
+              <div class="interactions">
+                <input type="number" id="qtdVinho1" value="0" min="0" />
+  
+                <button class="btn" onclick="carrinho()">
+                  Adicionar ao Carrinho
+                </button>
+              </div>
+            </section>
+  
+            <div class="recommended-plates">
+              <div>
+                <strong>Pratos recomendados</strong>
+
+                <span class="chevron-down"></span>
+              </div>
+
+              <ul>
+                <li>- Bife grelhado com molho de pimenta</li>
+                <li>- Risoto de cogumelos selvagens</li>
+                <li>- Queijos maturados, como parmesão ou cheddar</li>
+              </ul>
             </div>
-            <ul class="conteudo-recomendacoes">
-              <li>Bife grelhado com molho de pimenta</li>
-              <li>Risoto de cogumelos selvagens</li>
-              <li>Queijos maturados, como parmesão ou cheddar</li>
-              <li>
-                Massas com molhos ricos, como bolonhesa ou ragu de cordeiro
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="bloco1">
-        <img
-          class="img1"
-          src="https://img.panoramasistemas.com.br/viadelvino.img/produto/378/vinho-branco-chardonnay-vaccaro-750-ml-701-cape.webp"
-          alt=""
-        />
-        <div class="conteudo-vinho">
-          <h2 id="vinho2" class="titulo-vinhos">
-            Vinho branco Chardonnay R$ 35,00
-          </h2>
-          <p class="descricao-vinho">
-            O Vinho branco Chardonnay, Safra 2020, é elegante e refrescante, com
-            aromas de frutas tropicais, como abacaxi e pêssego, combinados com
-            notas de baunilha e toques sutis de carvalho. Sua acidez equilibrada
-            e corpo médio tornam-no versátil e fácil de beber.
-          </p>
-          <div class="interactions">
-            <input type="number" class="qtdVinho" id="qtdVinho2" value="0" />
-            <button class="btn" id="btnVinho1" onclick="carrinho()">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-        <div class="bloco-de-recomendacoes">
-          <div class="painel-fundo">
-            <div id="recomendacoes-block">
-              <h2 class="titulo-recomendacao">Pratos recomendados</h2>
-              <div id="triangulo-para-baixo"></div>
+          </li>
+
+          <li>
+            <img
+              class="product-img"
+              src="https://img.panoramasistemas.com.br/viadelvino.img/produto/378/vinho-branco-chardonnay-vaccaro-750-ml-701-cape.webp"
+              alt="Vinho Tinto Cabernet Sauvignon"
+            />
+  
+            <section>
+              <div class="top">
+                <h3>
+                  Vinho branco Chardonnay - R$ 35,00
+                </h3>
+    
+                <p>
+                  O Vinho branco Chardonnay, Safra 2020, é elegante e refrescante,
+                  com aromas de frutas tropicais, como abacaxi e pêssego, combinados
+                  com notas de baunilha e toques sutis de carvalho. Sua acidez
+                  equilibrada e corpo médio tornam-no versátil e fácil de beber.
+                </p>
+              </div>
+  
+              <div class="interactions">
+                <input type="number" id="qtdVinho1" value="0" min="0" />
+  
+                <button class="btn" onclick="carrinho()">
+                  Adicionar ao Carrinho
+                </button>
+              </div>
+            </section>
+  
+            <div class="recommended-plates">
+              <div>
+                <strong>Pratos recomendados</strong>
+
+                <span class="chevron-down"></span>
+              </div>
+
+              <ul>
+                <li>- Peixe branco grelhado, com molho de limão</li>
+                <li>- Salada de frutos do mar com camarão, lula e vieiras</li>
+                <li>- Frango assado com ervas frescas e legumes assados</li>
+              </ul>
             </div>
-            <ul class="conteudo-recomendacoes">
-              <li>Peixe branco grelhado, com molho de limão</li>
-              <li>Salada de frutos do mar com camarão, lula e vieiras</li>
-              <li>Frango assado com ervas frescas e legumes assados</li>
-              <li>Risoto de limão com camarão ou vieiras</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="bloco1">
-        <img
-          class="img1"
-          id="fundo-vinho"
-          src="https://lapastina.vteximg.com.br/arquivos/ids/158726-1000-1500/025422.png?v=637874433328530000"
-          alt=""
-        />
-        <div class="conteudo-vinho">
-          <h2 id="vinho3" class="titulo-vinhos">
-            Vinho rosé Pinot Noir R$ 40,00
-          </h2>
-          <p class="descricao-vinho">
-            O Vinho rosé Pinot Noir, Safra 2019, é delicado e refrescante,
-            apresentando uma cor rosa pálida e aromas sutis de frutas vermelhas,
-            como morango e framboesa, com toques florais e cítricos. Seu paladar
-            é leve, com uma acidez vibrante e um final suave.
-          </p>
-          <div class="interactions">
-            <input type="number" class="qtdVinho" id="qtdVinho3" value="0" />
-            <button class="btn" id="btnVinho1" onclick="carrinho()">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-        <div class="bloco-de-recomendacoes">
-          <div class="painel-fundo">
-            <div id="recomendacoes-block">
-              <h2 class="titulo-recomendacao">Pratos recomendados</h2>
-              <div id="triangulo-para-baixo"></div>
+          </li>
+  
+          <li>
+            <img
+              class="product-img"
+              src="https://lapastina.vteximg.com.br/arquivos/ids/158726-1000-1500/025422.png?v=637874433328530000"
+              alt="Vinho Tinto Cabernet Sauvignon"
+            />
+  
+            <section>
+              <div class="top">
+                <h3>
+                  Vinho rosé Pinot Noir - R$ 40,00
+                </h3>
+    
+                <p>
+                  O Vinho rosé Pinot Noir, Safra 2019, é delicado e refrescante,
+                  apresentando uma cor rosa pálida e aromas sutis de frutas
+                  vermelhas, como morango e framboesa, com toques florais e
+                  cítricos. Seu paladar é leve, com uma acidez vibrante e um final
+                  suave.
+                </p>
+              </div>
+  
+              <div class="interactions">
+                <input type="number" id="qtdVinho1" value="0" min="0" />
+  
+                <button class="btn" onclick="carrinho()">
+                  Adicionar ao Carrinho
+                </button>
+              </div>
+            </section>
+  
+            <div class="recommended-plates">
+              <div>
+                <strong>Pratos recomendados</strong>
+
+                <span class="chevron-down"></span>
+              </div>
+
+              <ul>
+                <li>- Salada de verão com frutas frescas, queijo de cabra e nozes</li>
+                <li>- Salmão grelhado com molho de ervas e limão</li>
+                <li>- Sushi e sashimi variados, como atum, salmão e peixe branco</li>
+              </ul>
             </div>
-            <ul class="conteudo-recomendacoes">
-              <li>
-                Salada de verão com frutas frescas, queijo de cabra e nozes
-              </li>
-              <li>Salmão grelhado com molho de ervas e limão</li>
-              <li>
-                Sushi e sashimi variados, como atum, salmão e peixe branco
-              </li>
-              <li>
-                Tapas espanholas, como presunto ibérico, queijo manchego e
-                azeitonas marinadas
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <div class="final">
       <div class="desconto">
         <button class="btn" id="desconto" onclick="desconto()">Desconto</button>
         <input type="text" class="txtDesconto" id="txtDesconto" value="" />
       </div>
+
       <button class="btn" id="comprar" onclick="finalizar()">
         Finalizar Compra
       </button>

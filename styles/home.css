@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(225, 185, 137);
+}
 
 .img1 {
   max-width: 200px;
@@ -5,26 +8,12 @@
   max-height: 400px;
 }
 
-.btn {
-  padding: 10px;
-  display: flex;
-  border-radius: 10px;
-  border: none;
-  transition: all 1s ease;
-}
-
 .txt {
   margin-top: 1000px;
   background-color: blue;
 }
 
-.lista-vinhos {
-  display: flex;
-  flex-direction: column;
-}
-
 .bloco1 {
-  background-color: antiquewhite;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -36,11 +25,6 @@
   border-radius: 5px;
 }
 
-.btn:hover {
-  transform: scale(1.1, 1.1);
-  background-color: rgb(158, 233, 45);
-}
-
 .txtDesconto {
   padding: 10px;
   margin-left: 10px;
@@ -50,7 +34,7 @@
   display: flex;
 }
 
-/* header */
+/*#region header */
 .header {
   position: sticky;
   right: 0;
@@ -76,7 +60,7 @@
   font-family: Felicity, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/* header-center */
+/*#region header-center */
 .header-center {
   flex: 1;
   display: flex;
@@ -122,7 +106,7 @@
   width: 2em;
   height: auto;
 }
-/* end header-center */
+/*#endregion header-center */
 
 .header-user {
   display: flex;
@@ -152,20 +136,110 @@
 .header-user-img:hover {
   transform: scale(1.2);
 }
-/* end header */
+/*#endregion header */
 
-#user-conected {
-  color: aliceblue;
-  font-size: 2em;
-  padding-top: 10px;
-  padding-right: 5px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+/*#region center  */
+#vines {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+  max-width: 1064px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 64px;
+  background-color: antiquewhite;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  color: #232324;
 }
 
-body {
-  background-color: rgb(225, 185, 137);
+#vines > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
+#vines > ul > li {
+  display: flex;
+  gap: 24px;
+}
+
+#vines > ul > li .product-img {
+  height: 200px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#vines > ul > li section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#vines > ul > li section .top {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#vines > ul > li section .top p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#vines > ul > li section .interactions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+#vines > ul > li section .interactions input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+#vines > ul > li .recommended-plates {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+
+  padding: 10px;
+  width: 640px;
+  height: 40px;
+  border-radius: 8px;
+  transition: height 0.5s ease-in;
+  overflow: hidden;
+  cursor: default;
+}
+
+#vines > ul > li .recommended-plates:hover {
+  height: 200px;
+}
+
+#vines > ul > li .recommended-plates span {
+  transition: all 500ms;
+}
+
+#vines > ul > li .recommended-plates:hover span {
+  transform: rotate(180deg);
+}
+
+#vines > ul > li .recommended-plates div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#vines > ul > li .recommended-plates li {
+  font-size: 14px;
+}
+
+/*#endregion  */
 
 .conteudo-vinho {
   width: 500px;
@@ -180,39 +254,10 @@ body {
   flex-direction: row;
 }
 
-.btn {
-  height: 40px;
-  background-color: greenyellow;
-  margin: 20px;
-}
-
-.painel-fundo {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 300px;
-  height: 40px;
-  background-color: aliceblue;
-  border: solid rgb(255, 255, 255) 1px;
-  border-radius: 5px;
-  transition: all 0.5s ease-in;
-}
-#triangulo-para-baixo {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #949396;
-}
-#recomendacoes-block {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-}
-.conteudo-recomendacoes {
+/* .conteudo-recomendacoes {
   opacity: 0;
   transition: all 0.5s ease;
-}
+} */
 .painel-fundo:hover {
   height: 210px;
   .conteudo-recomendacoes {
