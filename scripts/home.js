@@ -60,13 +60,13 @@ function pay() {
   const discountCoupon = prompt('Cupom de desconto (dica CUP10)');
   
   if (discountCoupon === 'CUP10') {
-    alert('Cupom aplicado');
+    alert('R$10 de Cupom aplicado');
     
   } else {
     alert('Perdeu a chance de ter cupom de desconto :C');
   }
   
-  alert(`Vamos para o pagamento, ficou apenas R$ ${totalAmount} :D`);
+  alert(`Vamos para o pagamento, ficou apenas R$ ${totalAmount - 10} :D`);
 
   window.location.href = 'login.html';
 }
